@@ -13,6 +13,8 @@ model.compile(optimizer = adam, loss = 'binary_crossentropy', metrics = [iouCalc
 TRAINING_IMG = './Trainingset/Image/'
 TRAINING_MSK = './Trainingset/Label/'
 
+#Split training and testing dataset
+
 # Trainset_img = sorted(os.listdir('./Data/Image/'), key=lambda x: int(x[:-4]))[:100]
 # Trainset_msk = sorted(os.listdir('./Data/Mask/'), key=lambda x: int(x[:-4]))[:100]
 Trainset_img = sorted(os.listdir(TRAINING_IMG), key=None)[:700] 
