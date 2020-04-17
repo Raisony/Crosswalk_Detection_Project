@@ -1,6 +1,6 @@
 from keras.layers import BatchNormalization, Conv2D, Conv2DTranspose, MaxPooling2D, UpSampling2D, Input, concatenate
 from keras.models import Model
-
+# UNet Semantic Segmentation Model
 def batchNormConv(input, filters, bachnorm_momentum, **conv2d_args):
     x = BatchNormalization(momentum=bachnorm_momentum)(input)
     x = Conv2D(filters, **conv2d_args)(x)
